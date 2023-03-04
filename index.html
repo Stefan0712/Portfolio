@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="public/js/index.js" defer></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div id="sidePanel" class="side-panel hide-side-panel">
+        <div  class="close-side-panel" onClick="toggleSidePanel()"><img id="side-panel-arrow" src="/public/imgs/down-arrow.png" alt=""></div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+   <div class="section" id="home">
+
+    <nav>
+        <div class="logo">LOGO</div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+            <a href="#contact" id="contact-btn">Contact me</a>
+    </nav>
+    <div class="home-content">
+        <div class="text">
+            <div class="title">
+                <h1 class="title-1">Hi! I am</h1>
+                <h1 class="title-2">Stefan</h1>
+            </div>
+            
+            <p class="short-description">I am an inspiring, self thaught junior web developer, that is looking to apply everything that has learned until now. I'm open to new things, willing to 
+                learn new technologies and eager to work with you.
+            </p>
+    
+            <a href="#contact" id="home-contact-btn">Contact me</a>
+        </div>
+        
+        <img class="img-1" src="./public/imgs/img-1.png" alt="computer illustration">
+        
+        <a href="#about" class="learn-more">
+            <h2>Learn more about me</h2>
+            <img src="./public/imgs/down-arrow.png" alt="Down arrow to find more" class="down-arrow">
+        </a>
+    </div>
+</div>
+<div class="section" id="about">
+    <div class="about-content">
+        <div class="left-panel">
+    
+            <div class="skills">
+                <h1>Skills</h1>
+                
+                <div class="learned-skills">
+                    <div class="skill">
+                        <img src="./public/imgs/html.png" alt="">
+                        <div class="skill-name">HTML</div>
+                    </div>
+                    <div class="skill">
+                        <img src="./public/imgs/js.png" alt="">
+                        <div class="skill-name">JavaScript</div>
+                    </div>
+                    <div class="skill">
+                        <img src="./public/imgs/css-3.png" alt="">
+                        <div class="skill-name">CSS</div>
+                    </div>
+                    <div class="skill">
+                        <img src="./public/imgs/bootstrap.png" alt="">
+                        <div class="skill-name">Bootstrap</div>
+                    </div>
+                    <div class="skill">
+                        <img src="./public/imgs/nodejs.png" alt="">
+                        <div class="skill-name">NodeJS</div>
+                    </div>
+                    <div class="skill">
+                        <img src="./public/imgs/express.png" alt="">
+                        <div class="skill-name">Express</div>
+                    </div>
+                    <div class="skill">
+                        <img src="./public/imgs/mongodb.png" alt="">
+                        <div class="skill-name">MongoDB</div>
+                    </div>
+                    <div class="skill">
+                        <img src="./public/imgs/react.png" alt="">
+                        <div class="skill-name">React</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="certificates">
+                <h1>Certificates</h1>
+                <div class="timeline">
+                    <div class="line"></div>
+                </div>
+                <div class="certificate">
+                    <div class="dot"></div>
+                    <div class="details">
+                        <div class="title">The Web Developer Bootcamp 2023</div>
+                        <div class="cert-link"><a href="https://www.udemy.com/certificate/UC-7852d17e-dc81-4d85-acc8-eeeb570a9954/">See certificate</a></div>
+                        <div class="course-link"><a href="https://www.udemy.com/course/the-web-developer-bootcamp/">See course</a></div>
+                    </div>
+                    <img class="cert-logo" src="./public/imgs/udemy-logo.png" alt="udemy logo">
+                </div>
+                <div class="certificate">
+                    <div class="dot"></div>
+                    <div class="details">
+    
+                        <div class="title">Excel from Beginner to Advanced</div>
+                        <div class="cert-link"><a href="https://www.udemy.com/certificate/UC-7a3d2dd3-6cab-4c38-b48f-f398f6dca25c/">See certificate</a></div>
+                        <div class="course-link"><a href="https://www.udemy.com/course/microsoft-excel-2013-from-beginner-to-advanced-and-beyond/">See course</a></div>
+                    </div>
+                    <img class="cert-logo" src="./public/imgs/udemy-logo.png" alt="udemy logo">
+                </div>
+                <div class="certificate">
+                    <div class="dot"></div>
+                    <div class="details">
+    
+                        <div class="title">Digital Marketing</div>
+                        <div class="cert-code">Certificate code: RCHF7TYYW</div>
+                        <div class="cert-link"><a href="https://learndigital.withgoogle.com/atelieruldigital/validate-certificate-code">See certificate</a></div>
+                        <div class="course-link"><a href="https://learndigital.withgoogle.com/atelieruldigital/course/digital-marketing">See course</a></div>
+                    </div>
+                    <img class="cert-logo" src="./public/imgs/google-logo.png" alt="google logo">
+                </div>
+            </div>
+    
+           
+        </div>
+        <div class="right-panel">
+    
+            <div class="personal-info">
+                <div class="top">
+                    <img id="about-picture" src="./public/imgs/default-picture.png" alt="profile picture">
+                    <div class="text">
+                        <table class="personal-info-table">
+                            <tr>
+                                <td>Full Name</td>
+                                <td>Vladulescu Stefan</td>
+                            </tr>
+                            <tr>
+                                <td>Age</td>
+                                <td>22 years</td>
+                            </tr>
+                            <tr>
+                                <td>Country</td>
+                                <td>Romania</td>
+                            </tr>
+                            <tr>
+                                <td>Current Status</td>
+                                <td>Student</td>
+                            </tr>
+                        </table>
+                        <h2 style="margin-top: 30px;">Date de contact</h2>
+                        <div class="contact-info">
+                            <div class="contact"><img src="/public/imgs/phone.png" alt="phone icon" id="contact-icon">+40 724 473 060</div>
+                            <div class="contact"><img src="/public/imgs/arond.png" alt="at icon" id="contact-icon">s.vladulescu@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus distinctio molestias cumque quisquam voluptatibus officiis sed fugiat animi, quaerat similique! Inventore culpa magni architecto facere quam provident. Doloremque, dolorem suscipit.</div>
+            
+                <div class="languages">
+                    <h2>Languages</h2>
+                    <div class="language-container">
+                        <div class="lang-name">English</div>
+                        <div class="lang-level">
+                            <div class="dot"><div class="dot-bg"></div></div>
+                            <div class="dot"><div class="dot-bg"></div></div>
+                            <div class="dot"><div class="dot-bg"></div></div>
+                            <div class="dot"><div class="dot-bg"></div></div>
+                            <div class="dot"><div class="dot-bg"></div></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="lang-label">C1</div>
+                    </div>
+                    <div class="language-container">
+                        <div class="lang-name">Romanian</div>
+                        <div class="lang-level">
+                            <div class="dot"><div class="dot-bg"></div></div>
+                            <div class="dot"><div class="dot-bg"></div></div>
+                            <div class="dot"><div class="dot-bg"></div></div>
+                            <div class="dot"><div class="dot-bg"></div></div>
+                            <div class="dot"><div class="dot-bg"></div></div>
+                            <div class="dot"><div class="dot-bg"></div></div>
+                            <div class="dot"><div class="dot-bg"></div></div>
+                        </div>
+                        <div class="lang-label">Native</div>
+                    </div>
+                </div>
+                <div class="education">
+                    <h2>Education</h2>
+                    <div class="high-school">High school: Colegiul Economic "Delta Dunarii" Tulcea <a href="http://colegiuldeltadunarii.ro/" target="_blank">See website</a></div>
+                    <div class="uni">University: Universitatea Ovidius Constanta, STEC <a href="https://www.stec.univ-ovidius.ro/" target="_blank">See website</a></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+  
+    <a href="#projects" class="learn-more" id="go-to-projects">
+        <h2>Check out my projects</h2>
+        <img src="./public/imgs/down-arrow.png" alt="Down arrow to find more" class="down-arrow">
+    </a>
+</div>
+<div class="section" id="projects">
+    
+
+    <div class="full-image" id="full-image-modal">
+        <div class="close-btn" id="modal-close-btn" onClick="closeFullScreenImageModal()">&#10005;</div>
+        <img alt="" class="full-screen-image" id="modal-image">  
+    </div>
+<div class="projects-header"><h1>Check out my projects</h1></div>
+<div class="projects-container">
+    <div class="project-container">
+        <img class="project-image" src="./public/imgs/yelp-camp.png" alt="">
+        <div class="full-screen-btn">
+            <button id="showFullScreen" onClick="showFullScreenImageModal('./public/imgs/yelp-camp.png')"></button>
+        </div>
+        <h2 class="title">YelpCamp</h2>
+        <div id="1" class="usedSkills" onClick="toggleProjectSkills('1')">
+            <p>What I used</p>
+            <div class="arrow" id="arrow-1">&#8249;</div>  
+            <div class="used-skill">JavaScript</div>
+            <div class="used-skill">HTML</div>
+            <div class="used-skill">CSS</div>
+            <div class="used-skill">Bootstrap</div>
+            <div class="used-skill">Express</div>
+            <div class="used-skill">MongoDB</div>
+            <div class="used-skill">NodeJS</div>
+        </div>
+        <div class="short-description">
+            A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.
+            <p class="read-more-btn" id="read-more-1" onClick="showMore('1')">Read more</p>
+        </div>
+        <div class="links">
+            <a href="https://yelpcamp-c2ke.onrender.com/" target="_blank">Live preview</a>
+            <a href="https://github.com/Stefan0712/YelpCamp/" target="_blank">Github link</a>
+        </div>
+        <div class="long-description" id="long-description-1">
+            <div class="close-btn" id="close-btn-1" onClick="closeShowMore('1')">&#10005;</div>
+            
+            <p>This app was made while completing the Complete Web Weveloper Bootcamp. It has all the basic CRUD functionality. It is also connected to CLoudinary for storing the images and to MongoDB for the rest of the information. It is hosted on the platform 'onrender.com'</p>
+            <h4>Some important used dependecies:</h4>
+            <ul>
+                <li>Mongoose</li>
+                <li>Cloudinary</li>
+                <li>Express</li>
+                <li>Helmet</li>
+                <li>Joi</li>
+                <li>Multer</li>
+                <li>Passport</li>
+                <li>Mapbox</li>
+            </ul>
+        </div>
+    </div>
+    <div class="project-container">
+        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
+        <div class="full-screen-btn">
+            <button id="showFullScreen" onClick="showFullScreenImageModal('./public/imgs/project-default.jpg')"></button>
+        </div>
+        <h2 class="title">Project title #2</h2>
+        <div id="2" class="usedSkills" onClick="toggleProjectSkills('2')">
+            <p>What I used</p>
+            <div class="arrow" id="arrow-2">&#8249;</div> 
+            <div class="used-skill">JavaScript</div>
+            <div class="used-skill">HTML</div>
+            <div class="used-skill">CSS</div>
+        </div>
+        <div class="short-description">
+            
+            <p>This project does that and that. Currently it has a known problem, but a fix is underway. It works by doing this and that.</p>
+            <p class="read-more-btn" id="read-more-2" onClick="showMore('2')">Read more</p>
+        </div>
+        <div class="links">
+            <a href="#">Live preview</a>
+            <a href="#">Github link</a>
+        </div>
+        <div class="long-description" id="long-description-2">
+            <div class="close-btn" id="close-btn-2" onClick="closeShowMore('2')">&#10005;</div>
+            
+            <p>This app was made while completing the Complete Web Weveloper Bootcamp. It has all the basic CRUD functionality. It is also connected to CLoudinary for storing the images and to MongoDB for the rest of the information. It is hosted on the platform 'onrender.com'</p>
+            <h4>Some important used dependecies:</h4>
+            <ul>
+                <li>Mongoose</li>
+                <li>Cloudinary</li>
+                <li>Express</li>
+                <li>Helmet</li>
+                <li>Joi</li>
+                <li>Multer</li>
+                <li>Passport</li>
+                <li>Mapbox</li>
+            </ul>
+        </div>
+    </div>
+    <div class="project-container">
+        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
+        <div class="full-screen-btn">
+            <button id="showFullScreen" onClick="showFullScreenImageModal('./public/imgs/project-default.jpg')"></button>
+        </div>
+        <h2 class="title">Project title #3</h2>
+        <div id="3" class="usedSkills" onClick="toggleProjectSkills('3')">
+            <p>What I used</p>
+            <div class="arrow" id="arrow-3">&#8249;</div> 
+            <div class="used-skill">JavaScript</div>
+            <div class="used-skill">HTML</div>
+            <div class="used-skill">CSS</div>
+        </div>
+        <div class="short-description">
+            <p>This project does that and that. Currently it has a known problem, but a fix is underway. It works by doing this and that.</p>
+            <p class="read-more-btn" id="read-more-3" onClick="showMore('3')">Read more</p>
+        </div>
+        <div class="links">
+            <a href="#">Live preview</a>
+            <a href="#">Github link</a>
+        </div>
+        <div class="long-description" id="long-description-3">
+            <div class="close-btn" id="close-btn-3" onClick="closeShowMore('3')">&#10005;</div>
+            
+            <p>This app was made while completing the Complete Web Weveloper Bootcamp. It has all the basic CRUD functionality. It is also connected to CLoudinary for storing the images and to MongoDB for the rest of the information. It is hosted on the platform 'onrender.com'</p>
+            <h4>Some important used dependecies:</h4>
+            <ul>
+                <li>Mongoose</li>
+                <li>Cloudinary</li>
+                <li>Express</li>
+                <li>Helmet</li>
+                <li>Joi</li>
+                <li>Multer</li>
+                <li>Passport</li>
+                <li>Mapbox</li>
+            </ul>
+        </div>
+    </div>
+    <div class="project-container">
+        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
+        <div class="full-screen-btn">
+            <button id="showFullScreen" onClick="showFullScreenImageModal('./public/imgs/project-default.jpg')"></button>
+        </div>
+        <h2 class="title">Project title #4</h2>
+        <div id="4" class="usedSkills" onClick="toggleProjectSkills('4')">
+            <p>What I used</p>
+            <div class="arrow" id="arrow-4">&#8249;</div> 
+            <div class="used-skill">JavaScript</div>
+            <div class="used-skill">HTML</div>
+            <div class="used-skill">CSS</div>
+        </div>
+        <div class="short-description">
+            <p>This project does that and that. Currently it has a known problem, but a fix is underway. It works by doing this and that.</p>
+            <p class="read-more-btn" id="read-more-4" onClick="showMore('4')">Read more</p>
+        </div>
+        <div class="links">
+            <a href="#">Live preview</a>
+            <a href="#">Github link</a>
+        </div>
+        <div class="long-description" id="long-description-4">
+            <div class="close-btn" id="close-btn-4" onClick="closeShowMore('4')">&#10005;</div>
+            
+            <p>This app was made while completing the Complete Web Weveloper Bootcamp. It has all the basic CRUD functionality. It is also connected to CLoudinary for storing the images and to MongoDB for the rest of the information. It is hosted on the platform 'onrender.com'</p>
+            <h4>Some important used dependecies:</h4>
+            <ul>
+                <li>Mongoose</li>
+                <li>Cloudinary</li>
+                <li>Express</li>
+                <li>Helmet</li>
+                <li>Joi</li>
+                <li>Multer</li>
+                <li>Passport</li>
+                <li>Mapbox</li>
+            </ul>
+        </div>
+    </div>
+    <div class="project-container">
+        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
+        <div class="full-screen-btn">
+            <button id="showFullScreen" onClick="showFullScreenImageModal('./public/imgs/project-default.jpg')"></button>
+        </div>
+        <h2 class="title">Project title #5</h2>
+        <div id="5" class="usedSkills" onClick="toggleProjectSkills('5')">
+            <p>What I used</p>
+            <div class="arrow" id="arrow-5">&#8249;</div> 
+            <div class="used-skill">JavaScript</div>
+            <div class="used-skill">HTML</div>
+            <div class="used-skill">CSS</div>
+        </div>
+        <div class="short-description">
+            <P>This project does that and that. Currently it has a known problem, but a fix is underway. It works by doing this and that.</P>
+            <p class="read-more-btn" id="read-more-5" onClick="showMore('5')">Read more</p>
+        </div>
+        <div class="links">
+            <a href="#">Live preview</a>
+            <a href="#">Github link</a>
+        </div>
+        <div class="long-description" id="long-description-5">
+            <div class="close-btn" id="close-btn-5" onClick="closeShowMore('5')">&#10005;</div>
+            
+            <p>This app was made while completing the Complete Web Weveloper Bootcamp. It has all the basic CRUD functionality. It is also connected to CLoudinary for storing the images and to MongoDB for the rest of the information. It is hosted on the platform 'onrender.com'</p>
+            <h4>Some important used dependecies:</h4>
+            <ul>
+                <li>Mongoose</li>
+                <li>Cloudinary</li>
+                <li>Express</li>
+                <li>Helmet</li>
+                <li>Joi</li>
+                <li>Multer</li>
+                <li>Passport</li>
+                <li>Mapbox</li>
+            </ul>
+        </div>
+    </div>
+    <div class="project-container">
+        <img class="project-image" src="./public/imgs/project-default.jpg" alt="" id="test1">
+        <div class="full-screen-btn">
+            <button id="showFullScreen" onClick="showFullScreenImageModal('./public/imgs/project-default.jpg')"></button>
+        </div>
+        <h2 class="title">Project title #6</h2>
+        <div id="6" class="usedSkills" onClick="toggleProjectSkills('6')">
+            <p>What I used</p>
+            <div class="arrow" id="arrow-6">&#8249;</div> 
+            <div class="used-skill">JavaScript</div>
+            <div class="used-skill">HTML</div>
+            <div class="used-skill">CSS</div>
+        </div>
+        <div class="short-description">
+            <p>This project does that and that. Currently it has a known problem, but a fix is underway. It works by doing this and that.</p>
+            <p class="read-more-btn" id="read-more-6" onClick="showMore('6')">Read more</p>
+        </div>
+        <div class="links">
+            <a href="#">Live preview</a>
+            <a href="#">Github link</a>
+        </div>
+        <div class="long-description" id="long-description-6">
+            <div class="close-btn" id="close-btn-6" onClick="closeShowMore('6')">&#10005;</div>
+            
+            <p>This app was made while completing the Complete Web Weveloper Bootcamp. It has all the basic CRUD functionality. It is also connected to CLoudinary for storing the images and to MongoDB for the rest of the information. It is hosted on the platform 'onrender.com'</p>
+            <h4>Some important used dependecies:</h4>
+            <ul>
+                <li>Mongoose</li>
+                <li>Cloudinary</li>
+                <li>Express</li>
+                <li>Helmet</li>
+                <li>Joi</li>
+                <li>Multer</li>
+                <li>Passport</li>
+                <li>Mapbox</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+    
+</div>
+<div class="section" id="contact">
+    <div class="contact-container">
+       
+           
+            <div class="form-container">
+                <div class="graphic-element-1">
+                    
+                </div>
+                
+                <div class="contact-form">
+                    <h1>Contact me</h1>
+                    <form action="">
+                        <div class="form-section">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" name="full-name" id="full-name">
+                        </div>
+                        <div class="form-section">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-section">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
+                        <button>Send message</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="social-medias">
+                <div class="social-container">
+                    <img class="social-logo" src="./public/imgs/instagram.png" alt="instagram logo">
+                    <h3>Instagram</h3>
+                </div>
+                <div class="social-container">
+                    <img class="social-logo" src="./public/imgs/linkedin.png" alt="linkedin logo">
+                    <h3>Linkedin</h3>
+                </div>
+                <div class="social-container">
+                    <img class="social-logo" src="./public/imgs/github.png" alt="github logo">
+                    <h3>Github</h3>
+                </div>
+            </div>
+
+        
+    </div>
+</div>
+
+
+
+
+
+   <a id="backToTop-btn" href="#home">▲</a>
+</body>
+<footer>
+    &#169; 2023 - Vladulescu Stefan
+</footer>
+</html>
