@@ -206,7 +206,7 @@ body{
 
 @keyframes pulse {
     50%{
-        transform: translateY(-30px);
+        transform: translateY(-20px);
     }
 }
 
@@ -221,18 +221,22 @@ body{
     background-size: cover;
     background-position: center;
     width: 100vw;
+    justify-content: center;
     
 }
 
 .about-content{
-    height: 100vh;
-    width: 90%;
+    height: 90%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 40px;
     backdrop-filter: blur(3px);
-    
+    background-color: white;
+    border: 1px solid lightgray;
+    box-shadow: 0 2px 4px 0 lightgray;
+    border-radius: 10px;
     
 }
 
@@ -450,7 +454,7 @@ body{
 }
 #go-to-projects{
     width: auto;
-    
+    bottom: 0px;
 }
 #projects{
     display: flex;
@@ -471,26 +475,31 @@ body{
     display: flex;
     align-items: center;
     padding-left: 20%;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 .projects-container{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     gap: 20px;
     backdrop-filter: blur(3px);
     justify-content: center;
-    
+    background-color: white;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
 }
 
 .project-container{
     border: 1px solid lightgray;
     border-radius: 10px;
     height: 550px;
-    width: 25%;
+    width: 30%;
     overflow: hidden;
     position: relative;
     background-color: white;
+    box-shadow: 0 2px 4px 0 lightgray;
     
 }
 .project-image{
@@ -817,7 +826,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 75px;
+    height: 50px;
     width: 100vw;
     background-color: #F18B16;
     color: white;
