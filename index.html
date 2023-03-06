@@ -51,11 +51,7 @@
         
         <img class="img-1" src="./public/imgs/img-1.png" alt="computer illustration">
         
-        <a href="#about" class="learn-more">
-            <h2>Learn more about me</h2>
-            <img src="./public/imgs/down-arrow.png" alt="Down arrow to find more" class="down-arrow">
-        </a>
-        <div class="home-footer"></div>
+        
     </div>
 </div>
 <div class="section" id="about">
@@ -215,255 +211,115 @@
     </div>
 
   
-    <a href="#projects" class="learn-more" id="go-to-projects">
-        <h2>Check out my projects</h2>
-        <img src="./public/imgs/down-arrow.png" alt="Down arrow to find more" class="down-arrow">
-    </a>
+    
 </div>
 <div class="section" id="projects">
     
+    <div class="projects-container">
+        <div class="container-header">
+            <div class="buttons">
+                <div>&#9135;</div>
+                <div>&#9634;</div>
+                <div>&#10006;</div>
+            </div>
+            <div class="menu">
+                <div class="menu-buttons">
+                    <div class="left">&#x279C;</div>
+                    <div class="right">&#x279C;</div>
+                    <div class="up">&#x279C;</div>
+                </div>
+                <div class="adress">
+                    <p class="link">C:\Portfolio\My-Projects</p>
+                    <div class="refresh">&#8635;</div>
+                </div>
+            </div>
+        </div>
+        <div class="main-area">
+            <div class="left-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="content">
+                <a href="https://yelpcamp-c2ke.onrender.com/" target="_blank">
+                    <div class="project-container">
+                        <img class="project-image" src="./public/imgs/yelp-camp.png" alt="">
+                        <div class="project-description">
+                            <h4 class="title">YelpCamp</h4>
+                            <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
+                            <a class="github-link" href="https://github.com/Stefan0712/YelpCamp/" target="_blank">Github link</a>
+                        </div>
+                    </div>  
+                </a>
+                
+                <a href="#" target="_blank">
+                    <div class="project-container">
+                        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
+                        <div class="project-description">
+                            <h4 class="title">Project #2</h4>
+                            <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
+                            <a class="github-link" href="https://github.com/Stefan0712/" target="_blank">Github link</a>
+                        </div>
+                    </div>  
+                </a>
+                <a href="#" target="_blank">
+                    <div class="project-container">
+                        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
+                        <div class="project-description">
+                            <h4 class="title">Project #3</h4>
+                            <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
+                            <a class="github-link" href="https://github.com/Stefan0712/" target="_blank">Github link</a>
+                        </div>
+                    </div>  
+                </a>
+                <a href="#" target="_blank">
+                    <div class="project-container">
+                        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
+                        <div class="project-description">
+                            <h4 class="title">Project #4</h4>
+                            <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
+                            <a class="github-link" href="https://github.com/Stefan0712/" target="_blank">Github link</a>
+                        </div>
+                    </div>  
+                </a>
+                <a href="#" target="_blank">
+                    <div class="project-container">
+                        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
+                        <div class="project-description">
+                            <h4 class="title">Project #5</h4>
+                            <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
+                            <a class="github-link" href="https://github.com/Stefan0712/" target="_blank">Github link</a>
+                        </div>
+                    </div>  
+                </a>
+                <a href="#" target="_blank">
+                    <div class="project-container">
+                        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
+                        <div class="project-description">
+                            <h4 class="title">Project #6</h4>
+                            <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
+                            <a class="github-link" href="https://github.com/Stefan0712/" target="_blank">Github link</a>
+                        </div>
+                    </div>  
+                </a>
+            </div>
+            <div class="scroll">
+                <div class="scroll-button-1">&#x2227;</div>
+                <div class="scroll-track"></div>
+                <div class="scroll-button-2">&#x2228;</div>
+            </div>
+        </div>
 
-    <div class="full-image" id="full-image-modal">
-        <div class="close-btn" id="modal-close-btn" onClick="closeFullScreenImageModal()">&#10005;</div>
-        <img alt="" class="full-screen-image" id="modal-image">  
-    </div>
-<div class="projects-header"><h1>Check out my projects</h1></div>
-<div class="projects-container">
-    <div class="project-container">
-        <img class="project-image" src="./public/imgs/yelp-camp.png" alt="">
-        <div class="full-screen-btn">
-            <button id="showFullScreen" onClick="showFullScreenImageModal('./public/imgs/yelp-camp.png')"></button>
-        </div>
-        <h2 class="title">YelpCamp</h2>
-        <div id="1" class="usedSkills" onClick="toggleProjectSkills('1')">
-            <p>What I used</p>
-            <div class="arrow" id="arrow-1">&#8249;</div>  
-            <div class="used-skill">JavaScript</div>
-            <div class="used-skill">HTML</div>
-            <div class="used-skill">CSS</div>
-            <div class="used-skill">Bootstrap</div>
-            <div class="used-skill">Express</div>
-            <div class="used-skill">MongoDB</div>
-            <div class="used-skill">NodeJS</div>
-        </div>
-        <div class="short-description">
-            A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.
-            <p class="read-more-btn" id="read-more-1" onClick="showMore('1')">Read more</p>
-        </div>
-        <div class="links">
-            <a href="https://yelpcamp-c2ke.onrender.com/" target="_blank">Live preview</a>
-            <a href="https://github.com/Stefan0712/YelpCamp/" target="_blank">Github link</a>
-        </div>
-        <div class="long-description" id="long-description-1">
-            <div class="close-btn" id="close-btn-1" onClick="closeShowMore('1')">&#10005;</div>
-            
-            <p>This app was made while completing the Complete Web Weveloper Bootcamp. It has all the basic CRUD functionality. It is also connected to CLoudinary for storing the images and to MongoDB for the rest of the information. It is hosted on the platform 'onrender.com'</p>
-            <h4>Some important used dependecies:</h4>
-            <ul>
-                <li>Mongoose</li>
-                <li>Cloudinary</li>
-                <li>Express</li>
-                <li>Helmet</li>
-                <li>Joi</li>
-                <li>Multer</li>
-                <li>Passport</li>
-                <li>Mapbox</li>
-            </ul>
-        </div>
-    </div>
-    <div class="project-container">
-        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
-        <div class="full-screen-btn">
-            <button id="showFullScreen" onClick="showFullScreenImageModal('./public/imgs/project-default.jpg')"></button>
-        </div>
-        <h2 class="title">Project title #2</h2>
-        <div id="2" class="usedSkills" onClick="toggleProjectSkills('2')">
-            <p>What I used</p>
-            <div class="arrow" id="arrow-2">&#8249;</div> 
-            <div class="used-skill">JavaScript</div>
-            <div class="used-skill">HTML</div>
-            <div class="used-skill">CSS</div>
-        </div>
-        <div class="short-description">
-            
-            <p>This project does that and that. Currently it has a known problem, but a fix is underway. It works by doing this and that.</p>
-            <p class="read-more-btn" id="read-more-2" onClick="showMore('2')">Read more</p>
-        </div>
-        <div class="links">
-            <a href="#">Live preview</a>
-            <a href="#">Github link</a>
-        </div>
-        <div class="long-description" id="long-description-2">
-            <div class="close-btn" id="close-btn-2" onClick="closeShowMore('2')">&#10005;</div>
-            
-            <p>This app was made while completing the Complete Web Weveloper Bootcamp. It has all the basic CRUD functionality. It is also connected to CLoudinary for storing the images and to MongoDB for the rest of the information. It is hosted on the platform 'onrender.com'</p>
-            <h4>Some important used dependecies:</h4>
-            <ul>
-                <li>Mongoose</li>
-                <li>Cloudinary</li>
-                <li>Express</li>
-                <li>Helmet</li>
-                <li>Joi</li>
-                <li>Multer</li>
-                <li>Passport</li>
-                <li>Mapbox</li>
-            </ul>
-        </div>
-    </div>
-    <div class="project-container">
-        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
-        <div class="full-screen-btn">
-            <button id="showFullScreen" onClick="showFullScreenImageModal('./public/imgs/project-default.jpg')"></button>
-        </div>
-        <h2 class="title">Project title #3</h2>
-        <div id="3" class="usedSkills" onClick="toggleProjectSkills('3')">
-            <p>What I used</p>
-            <div class="arrow" id="arrow-3">&#8249;</div> 
-            <div class="used-skill">JavaScript</div>
-            <div class="used-skill">HTML</div>
-            <div class="used-skill">CSS</div>
-        </div>
-        <div class="short-description">
-            <p>This project does that and that. Currently it has a known problem, but a fix is underway. It works by doing this and that.</p>
-            <p class="read-more-btn" id="read-more-3" onClick="showMore('3')">Read more</p>
-        </div>
-        <div class="links">
-            <a href="#">Live preview</a>
-            <a href="#">Github link</a>
-        </div>
-        <div class="long-description" id="long-description-3">
-            <div class="close-btn" id="close-btn-3" onClick="closeShowMore('3')">&#10005;</div>
-            
-            <p>This app was made while completing the Complete Web Weveloper Bootcamp. It has all the basic CRUD functionality. It is also connected to CLoudinary for storing the images and to MongoDB for the rest of the information. It is hosted on the platform 'onrender.com'</p>
-            <h4>Some important used dependecies:</h4>
-            <ul>
-                <li>Mongoose</li>
-                <li>Cloudinary</li>
-                <li>Express</li>
-                <li>Helmet</li>
-                <li>Joi</li>
-                <li>Multer</li>
-                <li>Passport</li>
-                <li>Mapbox</li>
-            </ul>
-        </div>
-    </div>
-    <div class="project-container">
-        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
-        <div class="full-screen-btn">
-            <button id="showFullScreen" onClick="showFullScreenImageModal('./public/imgs/project-default.jpg')"></button>
-        </div>
-        <h2 class="title">Project title #4</h2>
-        <div id="4" class="usedSkills" onClick="toggleProjectSkills('4')">
-            <p>What I used</p>
-            <div class="arrow" id="arrow-4">&#8249;</div> 
-            <div class="used-skill">JavaScript</div>
-            <div class="used-skill">HTML</div>
-            <div class="used-skill">CSS</div>
-        </div>
-        <div class="short-description">
-            <p>This project does that and that. Currently it has a known problem, but a fix is underway. It works by doing this and that.</p>
-            <p class="read-more-btn" id="read-more-4" onClick="showMore('4')">Read more</p>
-        </div>
-        <div class="links">
-            <a href="#">Live preview</a>
-            <a href="#">Github link</a>
-        </div>
-        <div class="long-description" id="long-description-4">
-            <div class="close-btn" id="close-btn-4" onClick="closeShowMore('4')">&#10005;</div>
-            
-            <p>This app was made while completing the Complete Web Weveloper Bootcamp. It has all the basic CRUD functionality. It is also connected to CLoudinary for storing the images and to MongoDB for the rest of the information. It is hosted on the platform 'onrender.com'</p>
-            <h4>Some important used dependecies:</h4>
-            <ul>
-                <li>Mongoose</li>
-                <li>Cloudinary</li>
-                <li>Express</li>
-                <li>Helmet</li>
-                <li>Joi</li>
-                <li>Multer</li>
-                <li>Passport</li>
-                <li>Mapbox</li>
-            </ul>
-        </div>
-    </div>
-    <div class="project-container">
-        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
-        <div class="full-screen-btn">
-            <button id="showFullScreen" onClick="showFullScreenImageModal('./public/imgs/project-default.jpg')"></button>
-        </div>
-        <h2 class="title">Project title #5</h2>
-        <div id="5" class="usedSkills" onClick="toggleProjectSkills('5')">
-            <p>What I used</p>
-            <div class="arrow" id="arrow-5">&#8249;</div> 
-            <div class="used-skill">JavaScript</div>
-            <div class="used-skill">HTML</div>
-            <div class="used-skill">CSS</div>
-        </div>
-        <div class="short-description">
-            <P>This project does that and that. Currently it has a known problem, but a fix is underway. It works by doing this and that.</P>
-            <p class="read-more-btn" id="read-more-5" onClick="showMore('5')">Read more</p>
-        </div>
-        <div class="links">
-            <a href="#">Live preview</a>
-            <a href="#">Github link</a>
-        </div>
-        <div class="long-description" id="long-description-5">
-            <div class="close-btn" id="close-btn-5" onClick="closeShowMore('5')">&#10005;</div>
-            
-            <p>This app was made while completing the Complete Web Weveloper Bootcamp. It has all the basic CRUD functionality. It is also connected to CLoudinary for storing the images and to MongoDB for the rest of the information. It is hosted on the platform 'onrender.com'</p>
-            <h4>Some important used dependecies:</h4>
-            <ul>
-                <li>Mongoose</li>
-                <li>Cloudinary</li>
-                <li>Express</li>
-                <li>Helmet</li>
-                <li>Joi</li>
-                <li>Multer</li>
-                <li>Passport</li>
-                <li>Mapbox</li>
-            </ul>
-        </div>
-    </div>
-    <div class="project-container">
-        <img class="project-image" src="./public/imgs/project-default.jpg" alt="" id="test1">
-        <div class="full-screen-btn">
-            <button id="showFullScreen" onClick="showFullScreenImageModal('./public/imgs/project-default.jpg')"></button>
-        </div>
-        <h2 class="title">Project title #6</h2>
-        <div id="6" class="usedSkills" onClick="toggleProjectSkills('6')">
-            <p>What I used</p>
-            <div class="arrow" id="arrow-6">&#8249;</div> 
-            <div class="used-skill">JavaScript</div>
-            <div class="used-skill">HTML</div>
-            <div class="used-skill">CSS</div>
-        </div>
-        <div class="short-description">
-            <p>This project does that and that. Currently it has a known problem, but a fix is underway. It works by doing this and that.</p>
-            <p class="read-more-btn" id="read-more-6" onClick="showMore('6')">Read more</p>
-        </div>
-        <div class="links">
-            <a href="#">Live preview</a>
-            <a href="#">Github link</a>
-        </div>
-        <div class="long-description" id="long-description-6">
-            <div class="close-btn" id="close-btn-6" onClick="closeShowMore('6')">&#10005;</div>
-            
-            <p>This app was made while completing the Complete Web Weveloper Bootcamp. It has all the basic CRUD functionality. It is also connected to CLoudinary for storing the images and to MongoDB for the rest of the information. It is hosted on the platform 'onrender.com'</p>
-            <h4>Some important used dependecies:</h4>
-            <ul>
-                <li>Mongoose</li>
-                <li>Cloudinary</li>
-                <li>Express</li>
-                <li>Helmet</li>
-                <li>Joi</li>
-                <li>Multer</li>
-                <li>Passport</li>
-                <li>Mapbox</li>
-            </ul>
-        </div>
     </div>
 
-</div>
+
+
+
+
+
+   
+
 
 
 
