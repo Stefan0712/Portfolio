@@ -13,321 +13,349 @@
 </head>
 
 <body>
-    <div id="sidePanel" class="side-panel hide-side-panel">
-        <div  class="close-side-panel" onClick="toggleSidePanel()"><img id="side-panel-arrow" src="/public/imgs/down-arrow.png" alt=""></div>
-        <div class="links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
+    
 
-   <div class="section" id="home">
+<div class="section" id="home">
 
-    <nav>
-        <div class="logo">LOGO</div>
-        <div class="links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-            <a href="#contact" id="contact-btn">Contact me</a>
-    </nav>
+    
     <div class="home-content">
-        <div class="text">
-            <div class="title">
-                <h1 class="title-1">Hi! I am</h1>
-                <h1 class="title-2">Stefan</h1>
+        <img class="os-logo" src="/public/imgs/os-logo.png" alt="">
+        <div class="icons">
+            <div class="desktop-icon" onClick="showWindow('about-container')">
+                    <img src="./public/imgs/support.png" alt="">
+                    <p>About me</p>  
             </div>
-            
-            <p class="short-description">I am an inspiring, self thaught junior web developer, that is looking to apply everything that has learned until now. I'm open to new things, willing to 
-                learn new technologies and eager to work with you.
-            </p>
+            <div class="desktop-icon" onClick="showWindow('projects-container')">
+                <img src="./public/imgs/project.png" alt="">
+                <p>My Projects</p>
+            </div>
+            <div class="desktop-icon" onClick="showWindow('contact-container')">
+                <img src="./public/imgs/email.png" alt="">
+                <p>Contact me</p>
+            </div>
+        </div>
+        <!-- <div class="start-popup">
+            <div class="window-header">
+                <div class="window-top-buttons">
+                    <div>&#9135;</div>
+                    <div>&#9634;</div>
+                    <div>&#10006;</div>
+                </div>
+            </div>
+            <div class="start-window-content">
+                <div class="title">
+                    <h1 class="title-1">Hi! I am</h1><h1 class="title-2">Stefan!</h1>
+                </div>
+                
+                <p class="short-description">I am an inspiring, self thaught junior web developer, that is looking to apply everything that has learned until now. I'm open to new things, willing to 
+                    learn new technologies and eager to work with you.
+                </p>
+        
+                <a href="#about" id="about-contact-btn">Learn more about me</a>
+            </div>
+        </div> -->
+        
+        
+        <div class="home-footer">
+            <div class="start-button"><img src="./public/imgs/start-menu.png" alt=""></div>
+            <div class="start-footer-socials">
+                <img class="social-logo" src="./public/imgs/instagram.png" alt="instagram logo">
+                <img class="social-logo" src="./public/imgs/linkedin.png" alt="linkedin logo">
+                <img class="social-logo" src="./public/imgs/github.png" alt="github logo">
+                <img class="social-logo" src="./public/imgs/fiverr.png" alt="fiverr logo">
+            </div>
+        </div>
+
+
+
+        <div class="projects-container">
+            <div class="window-header">
+                <div class="window-top-buttons">
+                    <div>&#9135;</div>
+                    <div>&#9634;</div>
+                    <div onClick="closeWindow('projects-container')">&#10006;</div>
+                </div>
+                <div class="menu">
+                    <div class="menu-buttons">
+                        <div class="left">&#x279C;</div>
+                        <div class="right">&#x279C;</div>
+                        <div class="up">&#x279C;</div>
+                    </div>
+                    <div class="adress">
+                        <p class="link">C:\Portfolio\My-Projects</p>
+                        <div class="refresh">&#8635;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-area">
+                <div class="left-menu">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="content">
+                    <a href="https://yelpcamp-c2ke.onrender.com/" target="_blank">
+                        <div class="project-container">
+                            <img class="project-image" src="./public/imgs/yelp-camp.png" alt="">
+                            <div class="project-description">
+                                <h4 class="title">YelpCamp</h4>
+                                <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
+                                <a class="github-link" href="https://github.com/Stefan0712/YelpCamp/" target="_blank">Github link</a>
+                            </div>
+                        </div>  
+                    </a>
+                    
+                    <a href="#" target="_blank">
+                        <div class="project-container">
+                            <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
+                            <div class="project-description">
+                                <h4 class="title">Project #2</h4>
+                                <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
+                                <a class="github-link" href="https://github.com/Stefan0712/" target="_blank">Github link</a>
+                            </div>
+                        </div>  
+                    </a>
+                    <a href="#" target="_blank">
+                        <div class="project-container">
+                            <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
+                            <div class="project-description">
+                                <h4 class="title">Project #3</h4>
+                                <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
+                                <a class="github-link" href="https://github.com/Stefan0712/" target="_blank">Github link</a>
+                            </div>
+                        </div>  
+                    </a>
+                    <a href="#" target="_blank">
+                        <div class="project-container">
+                            <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
+                            <div class="project-description">
+                                <h4 class="title">Project #4</h4>
+                                <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
+                                <a class="github-link" href="https://github.com/Stefan0712/" target="_blank">Github link</a>
+                            </div>
+                        </div>  
+                    </a>
+                    <a href="#" target="_blank">
+                        <div class="project-container">
+                            <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
+                            <div class="project-description">
+                                <h4 class="title">Project #5</h4>
+                                <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
+                                <a class="github-link" href="https://github.com/Stefan0712/" target="_blank">Github link</a>
+                            </div>
+                        </div>  
+                    </a>
+                    <a href="#" target="_blank">
+                        <div class="project-container">
+                            <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
+                            <div class="project-description">
+                                <h4 class="title">Project #6</h4>
+                                <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
+                                <a class="github-link" href="https://github.com/Stefan0712/" target="_blank">Github link</a>
+                            </div>
+                        </div>  
+                    </a>
+                </div>
+                <div class="scroll">
+                    <div class="scroll-button-1">&#x2227;</div>
+                    <div class="scroll-track"></div>
+                    <div class="scroll-button-2">&#x2228;</div>
+                </div>
+            </div>
     
-            <a href="#contact" id="home-contact-btn">Contact me</a>
         </div>
         
-        <img class="img-1" src="./public/imgs/img-1.png" alt="computer illustration">
         
+    
         
-    </div>
-</div>
-<div class="section" id="about">
-    <div class="about-header"></div>
-    <div class="about-content">
-        <div class="left-panel">
+        <div class="about-container">
+            <div class="window-header">
+                <div class="window-top-buttons">
+                    <div>&#9135;</div>
+                    <div>&#9634;</div>
+                    <div onClick="closeWindow('about-container')">&#10006;</div>
+                </div>
+                <div class="menu">
+                    <div class="menu-buttons">
+                        <div class="left">&#x279C;</div>
+                        <div class="right">&#x279C;</div>
+                        <div class="up">&#x279C;</div>
+                    </div>
+                    <div class="adress">
+                        <p class="link">C:\Portfolio\About-Me</p>
+                        <div class="refresh">&#8635;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-area">
+                <div class="left-menu">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="content">
+                    <div class="about-content">
+                        
+                        <div class="personal-info">
+                            <h1 class="about-section-title" onClick="toggleWindow('personal-info')">Personal information</h1>
+                            <div class="personal-info-content">
+                                <div class="top">
     
-            <div class="skills">
-                <h1>Skills</h1>
+                                    <img id="about-picture" src="./public/imgs/default-picture.png" alt="profile picture">
+                                    
+                                    <table class="personal-info-table">
+                                            <tr>
+                                                <td>Full Name</td>
+                                                <td>Vladulescu Stefan</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Age</td>
+                                                <td>22 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Country</td>
+                                                <td>Romania</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Current Status</td>
+                                                <td>Student</td>
+                                            </tr>
+                                    </table>
+                                    <div class="contact-info">
+                                            <h2 style="margin-top: 30px;">Contact info</h2>
+                                            <div class="contact"><img src="/public/imgs/phone.png" alt="phone icon" id="contact-icon">+40 724 473 060</div>
+                                            <div class="contact"><img src="/public/imgs/arond.png" alt="at icon" id="contact-icon">s.vladulescu@gmail.com</div>
+                                    </div>
+                                </div>
+                                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus distinctio molestias cumque quisquam voluptatibus officiis sed fugiat animi, quaerat similique! Inventore culpa magni architecto facere quam provident. Doloremque, dolorem suscipit.</div>
+                                <div class="bottom">
+    
+                                    <div class="languages">
+                                        <h2>Languages</h2>
+                                        <div class="language-container">
+                                            <div class="lang-name">English</div>
+                                            <div class="lang-level">
+                                                <div class="dot"><div class="dot-bg"></div></div>
+                                                <div class="dot"><div class="dot-bg"></div></div>
+                                                <div class="dot"><div class="dot-bg"></div></div>
+                                                <div class="dot"><div class="dot-bg"></div></div>
+                                                <div class="dot"><div class="dot-bg"></div></div>
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                            </div>
+                                            <div class="lang-label">C1</div>
+                                        </div>
+                                        <div class="language-container">
+                                            <div class="lang-name">Romanian</div>
+                                            <div class="lang-level">
+                                                <div class="dot"><div class="dot-bg"></div></div>
+                                                <div class="dot"><div class="dot-bg"></div></div>
+                                                <div class="dot"><div class="dot-bg"></div></div>
+                                                <div class="dot"><div class="dot-bg"></div></div>
+                                                <div class="dot"><div class="dot-bg"></div></div>
+                                                <div class="dot"><div class="dot-bg"></div></div>
+                                                <div class="dot"><div class="dot-bg"></div></div>
+                                            </div>
+                                            <div class="lang-label">Native</div>
+                                        </div>
+                                    </div>
+                                    <div class="education">
+                                        <h2>Education</h2>
+                                        <div class="high-school">High school: Colegiul Economic "Delta Dunarii" Tulcea <a href="http://colegiuldeltadunarii.ro/" target="_blank">See website</a></div>
+                                        <div class="uni">University: Universitatea Ovidius Constanta, STEC <a href="https://www.stec.univ-ovidius.ro/" target="_blank">See website</a></div>
+                                    </div>
+                                </div>
+                                
+                                </div>
+                        
+                        </div>
+                        <div class="skills">
+                            <h1 class="about-section-title" onClick="toggleWindow('skills')">Skills</h1>
+                            <div class="learned-skills">
+                                <div class="skill">
+                                    <img src="./public/imgs/html.png" alt="">
+                                    <div class="skill-name">HTML</div>
+                                </div>
+                                <div class="skill">
+                                    <img src="./public/imgs/js.png" alt="">
+                                    <div class="skill-name">JavaScript</div>
+                                </div>
+                                <div class="skill">
+                                    <img src="./public/imgs/css-3.png" alt="">
+                                    <div class="skill-name">CSS</div>
+                                </div>
+                                <div class="skill">
+                                    <img src="./public/imgs/bootstrap.png" alt="">
+                                    <div class="skill-name">Bootstrap</div>
+                                </div>
+                                <div class="skill">
+                                    <img src="./public/imgs/nodejs.png" alt="">
+                                    <div class="skill-name">NodeJS</div>
+                                </div>
+                                <div class="skill">
+                                    <img src="./public/imgs/express.png" alt="">
+                                    <div class="skill-name">Express</div>
+                                </div>
+                                <div class="skill">
+                                    <img src="./public/imgs/mongodb.png" alt="">
+                                    <div class="skill-name">MongoDB</div>
+                                </div>
+                                <div class="skill">
+                                    <img src="./public/imgs/react.png" alt="">
+                                    <div class="skill-name">React</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="certificates">
+                            <h1  class="about-section-title" onClick="toggleWindow('certificates')">Certificates</h1>
+                            <div class="timeline">
+                                <div class="line"></div>
+                            </div>
+                            <div class="certificate">
+                                <div class="dot"></div>
+                                <div class="details">
+                                    <div class="title">The Web Developer Bootcamp 2023</div>
+                                    <div class="cert-link"><a href="https://www.udemy.com/certificate/UC-7852d17e-dc81-4d85-acc8-eeeb570a9954/">See certificate</a></div>
+                                    <div class="course-link"><a href="https://www.udemy.com/course/the-web-developer-bootcamp/">See course</a></div>
+                                </div>
+                                <img class="cert-logo" src="./public/imgs/udemy-logo.png" alt="udemy logo">
+                            </div>
+                            <div class="certificate">
+                                <div class="dot"></div>
+                                <div class="details">
                 
-                <div class="learned-skills">
-                    <div class="skill">
-                        <img src="./public/imgs/html.png" alt="">
-                        <div class="skill-name">HTML</div>
-                    </div>
-                    <div class="skill">
-                        <img src="./public/imgs/js.png" alt="">
-                        <div class="skill-name">JavaScript</div>
-                    </div>
-                    <div class="skill">
-                        <img src="./public/imgs/css-3.png" alt="">
-                        <div class="skill-name">CSS</div>
-                    </div>
-                    <div class="skill">
-                        <img src="./public/imgs/bootstrap.png" alt="">
-                        <div class="skill-name">Bootstrap</div>
-                    </div>
-                    <div class="skill">
-                        <img src="./public/imgs/nodejs.png" alt="">
-                        <div class="skill-name">NodeJS</div>
-                    </div>
-                    <div class="skill">
-                        <img src="./public/imgs/express.png" alt="">
-                        <div class="skill-name">Express</div>
-                    </div>
-                    <div class="skill">
-                        <img src="./public/imgs/mongodb.png" alt="">
-                        <div class="skill-name">MongoDB</div>
-                    </div>
-                    <div class="skill">
-                        <img src="./public/imgs/react.png" alt="">
-                        <div class="skill-name">React</div>
-                    </div>
-                </div>
+                                    <div class="title">Excel from Beginner to Advanced</div>
+                                    <div class="cert-link"><a href="https://www.udemy.com/certificate/UC-7a3d2dd3-6cab-4c38-b48f-f398f6dca25c/">See certificate</a></div>
+                                    <div class="course-link"><a href="https://www.udemy.com/course/microsoft-excel-2013-from-beginner-to-advanced-and-beyond/">See course</a></div>
+                                </div>
+                                <img class="cert-logo" src="./public/imgs/udemy-logo.png" alt="udemy logo">
+                            </div>
+                            <div class="certificate">
+                                <div class="dot"></div>
+                                <div class="details">
                 
-            </div>
-            <div class="certificates">
-                <h1>Certificates</h1>
-                <div class="timeline">
-                    <div class="line"></div>
-                </div>
-                <div class="certificate">
-                    <div class="dot"></div>
-                    <div class="details">
-                        <div class="title">The Web Developer Bootcamp 2023</div>
-                        <div class="cert-link"><a href="https://www.udemy.com/certificate/UC-7852d17e-dc81-4d85-acc8-eeeb570a9954/">See certificate</a></div>
-                        <div class="course-link"><a href="https://www.udemy.com/course/the-web-developer-bootcamp/">See course</a></div>
-                    </div>
-                    <img class="cert-logo" src="./public/imgs/udemy-logo.png" alt="udemy logo">
-                </div>
-                <div class="certificate">
-                    <div class="dot"></div>
-                    <div class="details">
-    
-                        <div class="title">Excel from Beginner to Advanced</div>
-                        <div class="cert-link"><a href="https://www.udemy.com/certificate/UC-7a3d2dd3-6cab-4c38-b48f-f398f6dca25c/">See certificate</a></div>
-                        <div class="course-link"><a href="https://www.udemy.com/course/microsoft-excel-2013-from-beginner-to-advanced-and-beyond/">See course</a></div>
-                    </div>
-                    <img class="cert-logo" src="./public/imgs/udemy-logo.png" alt="udemy logo">
-                </div>
-                <div class="certificate">
-                    <div class="dot"></div>
-                    <div class="details">
-    
-                        <div class="title">Digital Marketing</div>
-                        <div class="cert-code">Certificate code: RCHF7TYYW</div>
-                        <div class="cert-link"><a href="https://learndigital.withgoogle.com/atelieruldigital/validate-certificate-code">See certificate</a></div>
-                        <div class="course-link"><a href="https://learndigital.withgoogle.com/atelieruldigital/course/digital-marketing">See course</a></div>
-                    </div>
-                    <img class="cert-logo" src="./public/imgs/google-logo.png" alt="google logo">
-                </div>
-            </div>
-    
-           
-        </div>
-        <div class="right-panel">
-    
-            <div class="personal-info">
-                <div class="top">
-                    <img id="about-picture" src="./public/imgs/default-picture.png" alt="profile picture">
-                    <div class="text">
-                        <table class="personal-info-table">
-                            <tr>
-                                <td>Full Name</td>
-                                <td>Vladulescu Stefan</td>
-                            </tr>
-                            <tr>
-                                <td>Age</td>
-                                <td>22 years</td>
-                            </tr>
-                            <tr>
-                                <td>Country</td>
-                                <td>Romania</td>
-                            </tr>
-                            <tr>
-                                <td>Current Status</td>
-                                <td>Student</td>
-                            </tr>
-                        </table>
-                        <h2 style="margin-top: 30px;">Contact info</h2>
-                        <div class="contact-info">
-                            <div class="contact"><img src="/public/imgs/phone.png" alt="phone icon" id="contact-icon">+40 724 473 060</div>
-                            <div class="contact"><img src="/public/imgs/arond.png" alt="at icon" id="contact-icon">s.vladulescu@gmail.com</div>
+                                    <div class="title">Digital Marketing</div>
+                                    <div class="cert-code">Certificate code: RCHF7TYYW</div>
+                                    <div class="cert-link"><a href="https://learndigital.withgoogle.com/atelieruldigital/validate-certificate-code">See certificate</a></div>
+                                    <div class="course-link"><a href="https://learndigital.withgoogle.com/atelieruldigital/course/digital-marketing">See course</a></div>
+                                </div>
+                                <img class="cert-logo" src="./public/imgs/google-logo.png" alt="google logo">
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus distinctio molestias cumque quisquam voluptatibus officiis sed fugiat animi, quaerat similique! Inventore culpa magni architecto facere quam provident. Doloremque, dolorem suscipit.</div>
-            
-                <div class="languages">
-                    <h2>Languages</h2>
-                    <div class="language-container">
-                        <div class="lang-name">English</div>
-                        <div class="lang-level">
-                            <div class="dot"><div class="dot-bg"></div></div>
-                            <div class="dot"><div class="dot-bg"></div></div>
-                            <div class="dot"><div class="dot-bg"></div></div>
-                            <div class="dot"><div class="dot-bg"></div></div>
-                            <div class="dot"><div class="dot-bg"></div></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                        </div>
-                        <div class="lang-label">C1</div>
-                    </div>
-                    <div class="language-container">
-                        <div class="lang-name">Romanian</div>
-                        <div class="lang-level">
-                            <div class="dot"><div class="dot-bg"></div></div>
-                            <div class="dot"><div class="dot-bg"></div></div>
-                            <div class="dot"><div class="dot-bg"></div></div>
-                            <div class="dot"><div class="dot-bg"></div></div>
-                            <div class="dot"><div class="dot-bg"></div></div>
-                            <div class="dot"><div class="dot-bg"></div></div>
-                            <div class="dot"><div class="dot-bg"></div></div>
-                        </div>
-                        <div class="lang-label">Native</div>
-                    </div>
+                <div class="scroll">
+                    <div class="scroll-button-1">&#x2227;</div>
+                    <div class="scroll-track"></div>
+                    <div class="scroll-button-2">&#x2228;</div>
                 </div>
-                <div class="education">
-                    <h2>Education</h2>
-                    <div class="high-school">High school: Colegiul Economic "Delta Dunarii" Tulcea <a href="http://colegiuldeltadunarii.ro/" target="_blank">See website</a></div>
-                    <div class="uni">University: Universitatea Ovidius Constanta, STEC <a href="https://www.stec.univ-ovidius.ro/" target="_blank">See website</a></div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
-  
-    
-</div>
-<div class="section" id="projects">
-    
-    <div class="projects-container">
-        <div class="container-header">
-            <div class="buttons">
-                <div>&#9135;</div>
-                <div>&#9634;</div>
-                <div>&#10006;</div>
-            </div>
-            <div class="menu">
-                <div class="menu-buttons">
-                    <div class="left">&#x279C;</div>
-                    <div class="right">&#x279C;</div>
-                    <div class="up">&#x279C;</div>
-                </div>
-                <div class="adress">
-                    <p class="link">C:\Portfolio\My-Projects</p>
-                    <div class="refresh">&#8635;</div>
-                </div>
-            </div>
-        </div>
-        <div class="main-area">
-            <div class="left-menu">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="content">
-                <a href="https://yelpcamp-c2ke.onrender.com/" target="_blank">
-                    <div class="project-container">
-                        <img class="project-image" src="./public/imgs/yelp-camp.png" alt="">
-                        <div class="project-description">
-                            <h4 class="title">YelpCamp</h4>
-                            <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
-                            <a class="github-link" href="https://github.com/Stefan0712/YelpCamp/" target="_blank">Github link</a>
-                        </div>
-                    </div>  
-                </a>
-                
-                <a href="#" target="_blank">
-                    <div class="project-container">
-                        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
-                        <div class="project-description">
-                            <h4 class="title">Project #2</h4>
-                            <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
-                            <a class="github-link" href="https://github.com/Stefan0712/" target="_blank">Github link</a>
-                        </div>
-                    </div>  
-                </a>
-                <a href="#" target="_blank">
-                    <div class="project-container">
-                        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
-                        <div class="project-description">
-                            <h4 class="title">Project #3</h4>
-                            <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
-                            <a class="github-link" href="https://github.com/Stefan0712/" target="_blank">Github link</a>
-                        </div>
-                    </div>  
-                </a>
-                <a href="#" target="_blank">
-                    <div class="project-container">
-                        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
-                        <div class="project-description">
-                            <h4 class="title">Project #4</h4>
-                            <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
-                            <a class="github-link" href="https://github.com/Stefan0712/" target="_blank">Github link</a>
-                        </div>
-                    </div>  
-                </a>
-                <a href="#" target="_blank">
-                    <div class="project-container">
-                        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
-                        <div class="project-description">
-                            <h4 class="title">Project #5</h4>
-                            <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
-                            <a class="github-link" href="https://github.com/Stefan0712/" target="_blank">Github link</a>
-                        </div>
-                    </div>  
-                </a>
-                <a href="#" target="_blank">
-                    <div class="project-container">
-                        <img class="project-image" src="./public/imgs/project-default.jpg" alt="">
-                        <div class="project-description">
-                            <h4 class="title">Project #6</h4>
-                            <p>A basic clone of Yelp.com with all the CRUD functionality and styled with Bootstrap.</p>
-                            <a class="github-link" href="https://github.com/Stefan0712/" target="_blank">Github link</a>
-                        </div>
-                    </div>  
-                </a>
-            </div>
-            <div class="scroll">
-                <div class="scroll-button-1">&#x2227;</div>
-                <div class="scroll-track"></div>
-                <div class="scroll-button-2">&#x2228;</div>
             </div>
         </div>
-
-    </div>
-
-
-
-
-
-
-   
-
-
-
-
-
-    
-</div>
-<div class="section" id="contact">
-    <div class="contact-container">
+        <div class="contact-container">
+            <div class="close-contact-window-btn" onClick="closeWindow('contact-container')">&#10006;</div>
        
            
             <div class="form-container">
@@ -373,7 +401,7 @@
                     <h3>Fiverr</h3>
                 </div>
             </div>
-
+        </div>
         
     </div>
 </div>
@@ -381,10 +409,21 @@
 
 
 
+        
 
-   <a id="backToTop-btn" href="#home">▲</a>
+
+
+    
+
+
+<div class="section" id="contact">
+    
+</div>
+
+
+
+
+
 </body>
-<footer>
-    &#169; 2023 - Vladulescu Stefan
-</footer>
+
 </html>
